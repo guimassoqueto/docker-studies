@@ -10,7 +10,7 @@ COPY . .
 
 EXPOSE 3000
 
-VOLUME [ "/app/feedback" ]
-# define which files / folders you want to persist even after the container is removed
+# VOLUME [ "/app/feedback" ]
+# anonymous volumes: define which files / folders you want to persist even after the container is removed
 
-CMD ["node", "server.js"]
+CMD ["npm", "run", "start"]
